@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  mongo:
+    image: "mongo:5"
+    restart: always
+    volumes:
+      - "./data/db:/data/db"
+      - "./data/logs/mongodb.log:/var/log/mongodb.log"
+    command: [ '--logpath', '/var/log/mongodb.log' ]
+  redis:
+    image: "redis:6-alpine"
+    restart: always

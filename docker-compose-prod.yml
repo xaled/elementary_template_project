@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: home_dashboard
+    hostname: local.xaled.info
+    build: .
+    volumes:
+      - .:/app
+    networks:
+      - nginx_proxynet
+networks:
+  nginx_proxynet:
+    external: true
