@@ -1,2 +1,2 @@
-flaskly
+elementary-flask
 pottery
