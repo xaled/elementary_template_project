@@ -1,2 +1,2 @@
 from ._app import app, elementary
-import project_name.routes
+from .routes import *
