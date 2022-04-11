@@ -1,12 +1,11 @@
 services:
   app:
-    container_name: home_dashboard
-    hostname: local.xaled.info
-    build: .
+    image: python:3.9-alpine
     volumes:
       - .:/app
-    networks:
-      - nginx_proxynet
-networks:
-  nginx_proxynet:
-    external: true
+    ports:
+      - 5000:5000
+    working_dir: "/app"
+    entrypoint:
+      "/bin/sh -c 'pip install --upgrade --no-cache-dir -r requirements.txt && python ./run.py'"
+

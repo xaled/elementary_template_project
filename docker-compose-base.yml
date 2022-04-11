@@ -5,8 +5,8 @@ services:
     restart: always
     volumes:
       - "./data/db:/data/db"
-      - "./data/logs/mongodb.log:/var/log/mongodb.log"
-    command: [ '--logpath', '/var/log/mongodb.log' ]
+  #      - "./data/logs/mongodb:/var/log/mongodb"
+  #    command: ['--logpath', '/var/log/mongodb/mongodb.log']
   redis:
     image: "redis:6-alpine"
     restart: always
