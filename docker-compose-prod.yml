@@ -8,9 +8,3 @@ services:
       - 5000:5000
     env_file: .env
     working_dir: "/app"
-##    entrypoint:
-##      "/bin/sh -c 'pip install --upgrade --no-cache-dir -r requirements.txt && python ./run.py'"
-#    entrypoint:
-#      "/bin/sh -c 'pip install --upgrade gunicorn --no-cache-dir && \
-#       pip install --upgrade --no-cache-dir -r requirements.txt && \
-#       gunicorn -w4 -b 0.0.0.0:5000 project_name:app'"
