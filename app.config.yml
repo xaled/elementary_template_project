@@ -1,5 +1,5 @@
 SECRET_KEY: "2700de2906e4dc604f733412bd4f1a759ed6efa5a1279b6ec2cfee638818c8b3"
-DEBUG: true
+DEBUG: false
 ELEMENTARY_FLASK:
   redis: { }
   mongodb: { }
